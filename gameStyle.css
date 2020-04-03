@@ -1,0 +1,71 @@
+table, td {
+    text-align: center;
+    margin: auto;
+  }
+
+.hidden
+{
+  display: none;
+}
+
+.cellSize
+{
+  min-width: 50vh;
+  height: 100px;
+}
+
+#face
+{
+  font-size: 75px;
+}
+
+body
+{
+  background-color: lightblue;
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#instructions
+{
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+}
+
+#click
+{
+  border: 1px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: lightgoldenrodyellow;
+  background-image: linear-gradient(lightgoldenrodyellow, lightgrey);
+  
+}
+
+#points
+{
+  font-size: xx-large;
+}
+
+.sad
+{
+  color: red;
+}
+
+#animate {
+  width: 250px;
+  
+  position: absolute;
+  background-image: linear-gradient(lightgoldenrodyellow, red);
+  text-align: center;
+  text-shadow: gray;
+  font-size: 7vh;
+  padding-top: 37px;
+  font-weight: bold;
+}

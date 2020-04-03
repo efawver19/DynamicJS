@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Project</title>
+  <link rel="stylesheet" href="gameStyle.css">
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="game.js"></script>
+</head> 
+<body onload="startProgram()">
+  
+  <div class="hidden" id="animate">Game Over<br><div id="postMessage"></div></div>
+      <table id="clickTable">
+          <tr>
+            <td class="cellSize"><div id="t0"></div></td>
+            <td class="cellSize"><div id="t1"></div></td>
+            <td class="cellSize"><div id="t2"></div></td>
+            <td class="cellSize"><div id="t3"></div></td>            
+          </tr>
+          <tr>
+            <td class="cellSize"><div id="t4"></div></td>
+            <td class="cellSize"><div id="t5"></div></td>
+            <td class="cellSize"><div id="t6"></div></td>
+            <td class="cellSize"><div id="t7"></div></td>            
+          </tr>
+          <tr>
+            <td class="cellSize"><div id="t8"></div></td>
+            <td class="cellSize"><div id="t9"></div></td>
+            <td class="cellSize"><div id="t10"></div></td>
+            <td class="cellSize"><div id="t11"></div></td>            
+          </tr>
+      </table>
+
+      <div id="points">Points: 0</div>
+      <button id="click">Start</button>
+
+      <p id="instructions">Instructions:<br>
+      Click on the faces before they disappear. <br>
+      Don't click on the angry faces! <br>
+      Score 15 points to win! 
+      <br>If you score -5 points you will lose :(</p>
+
+  
+</body>
+</html>
