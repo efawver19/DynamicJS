@@ -8,6 +8,7 @@ var cellNums = ["t0", "t1", "t2", "t3", "t4", "t5", "t6", "t7",
 
  var points = 0;
  var clickTimer;
+ var id; 
 
 function startProgram()
 {
@@ -19,8 +20,8 @@ function startProgram()
     points = 0;
     startGame();
     $("#points").empty().append("Points: " + points);
+    clearInterval(id);
     elem.style.left = "0px";
-    $("#postMessage").empty();
     addIcon();
     });
 
@@ -49,11 +50,11 @@ function addIcon()
 
   if(happySadNum == 0)
   {
-    clickTimer = setTimeout(sadTimeOut, 1250);
+    clickTimer = setTimeout(sadTimeOut, 1500);
   }
   else
   {
-    clickTimer = setTimeout(happyTimeOut, 1250);
+    clickTimer = setTimeout(happyTimeOut, 1500);
   }
 
 }
@@ -107,11 +108,11 @@ function endGame()
   $("#activeFace").parent().empty();
   if(points <= -5)
   {
-    $("#animate").append("You Lose");
+    $("#postMessage").empty().append("You Lose");
   }
   else
   {
-    $("#animate").append("You Win!");
+    $("#postMessage").empty().append("You Win!");
   }
   gameOver();
 }
@@ -122,10 +123,10 @@ function gameOver()
   var elem = document.getElementById("animate"); 
   $("#animate").removeClass("hidden")
   var pos = 0;
-  var id = setInterval(frame, 5);
+  id = setInterval(frame, 5);
   
   function frame() {
-    if (pos == 999999) {
+    if (pos == 10000) {
       clearInterval(id);
     } else {
       pos++; 
